@@ -17,7 +17,7 @@
             $data = [
                 'name' => filter_input(INPUT_POST, "name"),
                 'email' => filter_input(INPUT_POST, "email"),
-                'password' => filter_input(INPUT_POST, "password"),
+                'password' => crypt(filter_input(INPUT_POST, "password"), ENCRYPT_SALT)
             ];
             $saved = $this->save('users', $data);
             if ($saved) {

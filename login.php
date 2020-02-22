@@ -1,5 +1,7 @@
 <?php
     include('includes/header.php');
+
+//    echo ''. hash_equals($hashed_password, crypt($user_input=1234567, $hashed_password));
 ?>
 
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
